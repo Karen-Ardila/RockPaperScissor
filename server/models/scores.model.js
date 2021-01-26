@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const ScoreSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     username: {
         type: String,
         required: [true, "username name is required"],
@@ -12,3 +12,7 @@ const ScoreSchema = new mongoose.Schema({
         required: [true, "username name is required"],
     }
 });
+
+const User = mongoose.model("user", UserSchema);
+
+module.exports = User;
