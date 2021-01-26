@@ -111,20 +111,20 @@ const Home = () => {
             <div className="game-board">
                 <div className="player-choice">
                     {selection.length === 0 ? (<>
-                        <img onClick={() => { onSelection('rock') }} src={rock}></img>
-                        <img onClick={() => { onSelection('paper') }} src={paper}></img>
-                        <img onClick={() => { onSelection('scissors') }} src={scissors}></img>
-                    </>) : <img src={getSelectedImage(selection)}></img>}
+                        <img onClick={() => { onSelection('rock') }} src={rock} alt="Rock"></img>
+                        <img onClick={() => { onSelection('paper') }} src={paper} alt="Paper"></img>
+                        <img onClick={() => { onSelection('scissors') }} src={scissors} alt="Scissors"></img>
+                    </>) : <img src={getSelectedImage(selection)} alt={selection}></img>}
                 </div>
                 <div>
                     <p className="alerts">{status}</p>
                 </div>
                 <div className="player-choice">
                     {computerSelection.length == 0 ? (<>
-                        <img src={rock}></img>
-                        <img src={paper}></img>
-                        <img src={scissors}></img>
-                    </>) : <img src={getSelectedImage(computerSelection)}></img>}
+                        <img src={rock} alt="Rock"></img>
+                        <img src={paper} alt="Paper"></img>
+                        <img src={scissors} alt="Scissors"></img>
+                    </>) : <img src={getSelectedImage(computerSelection)} alt={computerSelection}></img>}
 
                 </div>
             </div>
