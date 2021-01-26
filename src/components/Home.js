@@ -82,7 +82,9 @@ const Home = () => {
             }
         }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(calculateResults, [selection])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         if (playerWinCount === 3) {
             setStatus("Congrats you won the game!  🎉")
