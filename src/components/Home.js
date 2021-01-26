@@ -122,7 +122,7 @@ const Home = () => {
                     <p className="alerts">{status}</p>
                 </div>
                 <div className="player-choice">
-                    {computerSelection.length == 0 ? (<>
+                    {computerSelection.length === 0 ? (<>
                         <img src={rock} alt="Rock"></img>
                         <img src={paper} alt="Paper"></img>
                         <img src={scissors} alt="Scissors"></img>
